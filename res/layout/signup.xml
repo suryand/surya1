@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/LightBlue"
+    android:orientation="vertical" >
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Create a New Account"
+		android:textSize="25sp" android:textStyle="bold" android:gravity="center" />
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+		<TextView
+		    android:layout_width="115dp"
+		    android:layout_height="wrap_content"
+		    android:padding="5sp"
+		    android:text="Username"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:width="70sp" >
+
+</TextView>
+		<AutoCompleteTextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:width="500sp" android:id="@+id/username"></AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+		<TextView
+		    android:layout_width="116dp"
+		    android:layout_height="wrap_content"
+		    android:padding="5sp"
+		    android:text="Password"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:width="70sp" >
+
+</TextView>
+		<AutoCompleteTextView android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:width="500sp" 
+			android:password="true"
+			android:id="@+id/password"></AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+		<TextView
+		    android:layout_width="115dp"
+		    android:layout_height="wrap_content"
+		    android:padding="5sp"
+		    android:text="Sec. Ques."
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:width="70sp" >
+</TextView>
+		<AutoCompleteTextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:width="500sp" android:id="@+id/secQuestion"></AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+		<TextView
+		    android:layout_width="115dp"
+		    android:layout_height="wrap_content"
+		    android:padding="5sp"
+		    android:text="Answer"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:width="70sp" >
+</TextView>
+		<AutoCompleteTextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:width="500sp" android:id="@+id/answer"></AutoCompleteTextView>
+	</LinearLayout>
+	    
+
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+		<Button
+		    android:id="@+id/Button02"
+		    android:layout_width="200dp"
+		    android:layout_height="wrap_content"
+		    android:onClick="onAddClick"
+		    android:text="Create" >
+</Button>
+
+	    <Button
+	        android:layout_width="185dp"
+	        android:layout_height="wrap_content"
+	        android:onClick="onCancelClick"
+	        android:text="Cancel" >
+</Button>
+	</LinearLayout>
+
+
+</LinearLayout>

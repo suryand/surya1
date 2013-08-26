@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/LightSkyBlue"
+    android:padding="10dip" >
+
+          <Button
+              android:id="@+id/createAC"
+              style="@color/DarkBlue"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/txtPassword"
+              android:layout_below="@+id/btnLogin"
+              android:layout_marginLeft="12dp"
+              android:layout_marginTop="21dp"
+              android:scrollHorizontally="true"
+              android:text="Create a New Account" />
+
+          <EditText
+              android:id="@+id/txtPassword"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/lblPassword"
+              android:layout_centerVertical="true"
+              android:ems="10"
+              android:password="true"
+              android:textSize="12sp" >
+
+              <requestFocus />
+          </EditText>
+
+          <Button
+              android:id="@+id/btnLogin"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/txtPassword"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="19dp"
+              android:scrollHorizontally="true"
+              android:text="Login" />
+
+          <TextView
+              android:id="@+id/lblPassword"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/txtPassword"
+              android:layout_alignLeft="@+id/txtUsername"
+              android:text="Password:"
+              android:textColor="@color/Black"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtUsername"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/lblPassword"
+              android:layout_centerHorizontal="true"
+              android:ems="10"
+              android:textSize="12sp" />
+
+          <TextView
+              android:id="@+id/lblUsername"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/txtUsername"
+              android:layout_alignLeft="@+id/txtUsername"
+              android:text="Username:"
+              android:textColor="@color/Black"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+ 
+ </RelativeLayout>
